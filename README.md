@@ -41,6 +41,7 @@ Users should be able to:
 - CSS custom properties
 - Flex
 - Media queries
+- SASS
 - Javascript
 
 ## Author
