@@ -1,0 +1,73 @@
+main
+    .title
+        margin-bottom: 15px
+        font-size: 24px
+        font-weight: 300
+        color: $grey
+        span
+            color: black
+            font-weight: 700
+    .info
+        margin: 10px 0
+        font-size: 14px
+        color: black
+    form
+        margin: 30px 15px 60px 20px
+        position: relative
+        input
+            width: 100%
+            padding: 12px 25px
+            border-radius: 50px
+            border-color: $paleBlue
+            border-style: solid
+            outline-color: $lightRed
+            &::placeholder
+                color: $paleBlue
+            &:focus
+                outline-color: $blue
+            &.invalid
+                outline-color: $lightRed
+                border-color: $lightRed
+        .error
+            color: $lightRed
+            font-size: 11px
+            font-style: italic
+            font-weight: 600
+            &.active
+                margin: 7px 0 15px 0
+        .notify-me
+            width: 100%
+            margin: 10px 0
+            padding: 15px 0
+            background-color: $blue
+            color: white
+            border-radius: 50px
+            border: none
+            font-weight: 600
+            box-shadow: 0 12px 15px -2px $paleBlue
+            cursor: pointer
+            transition: .2s linear
+            &:hover
+                background-color: rgb(118, 150, 248)
+
+    img
+        width: 100%
+        max-width: 560px
+
+@media (min-width: 800px)
+    main
+        .title
+            font-size: 36px
+        form
+            margin: 30px 0 60px 0
+            font-size: 0
+            input
+                margin: 0 2%
+                width: 66%
+            .notify-me
+                margin: 0
+                width: 30%
+            .error
+                position: absolute
+                top: 100%
+                left: calc(25px + 2%)

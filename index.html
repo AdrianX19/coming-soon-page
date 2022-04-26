@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <script src="https://kit.fontawesome.com/fc1fdbbcc9.js" crossorigin="anonymous"></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
@@ -11,15 +12,29 @@
 </head>
 
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
+  <div class="wrapper">
+    <header>
+      <img src="./images/logo.svg" alt="Ping logo" class="logo">
+    </header>
+    <main>
+      <h1 class="title">We are launching <span>soon!</span></h1>
+      <p class="info">Subscribe and get notified</p>
+      <form>
+        <input type="email" placeholder="Your email address">
+        <p class="error"></p>
+        <button class="notify-me">Notify Me</button>
+      </form>
+      <img src="./images/illustration-dashboard.png" alt="Dashboard illustration">
+    </main>
+    <footer>
+      <div class="social-media">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
+  </div>
   <script src="./js/script.js"></script>
 </body>
 

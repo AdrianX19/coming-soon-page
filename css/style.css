@@ -1,26 +1,217 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Libre Franklin';
-}
-
-:root {
-    /* Primary colours */
-    --blue: hsl(223, 87%, 63%);
-
-    /* Secondary colours */
-    --paleBlue: hsl(223, 100%, 88%);
-    --lightRed: hsl(354, 100%, 66%);
-
-    /* Neutral colours */
-    --grey: hsl(0, 0%, 59%);
-    --darkBlue: hsl(209, 33%, 12%);
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Libre Franklin';
 }
 
 body {
-    min-height: 100vh;
-    font-size: 20px;
+  min-height: 100vh;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
+.wrapper {
+  padding: 5%;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 800px) {
+  .wrapper {
+    padding: 2% 5%;
+    width: 56%;
+  }
+}
+
+header img {
+  width: 60px;
+  margin: 5vh 0 3vh 0;
+}
+
+@media (min-width: 800px) {
+  header img {
+    margin: 30px 0 20px 0;
+  }
+}
+
+main .title {
+  margin-bottom: 15px;
+  font-size: 24px;
+  font-weight: 300;
+  color: #969696;
+}
+
+main .title span {
+  color: black;
+  font-weight: 700;
+}
+
+main .info {
+  margin: 10px 0;
+  font-size: 14px;
+  color: black;
+}
+
+main form {
+  margin: 30px 15px 60px 20px;
+  position: relative;
+}
+
+main form input {
+  width: 100%;
+  padding: 12px 25px;
+  border-radius: 50px;
+  border-color: #c2d3ff;
+  border-style: solid;
+  outline-color: #ff5263;
+}
+
+main form input::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+
+main form input:-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+main form input::-ms-input-placeholder {
+  color: #c2d3ff;
+}
+
+main form input::placeholder {
+  color: #c2d3ff;
+}
+
+main form input:focus {
+  outline-color: #4f7df3;
+}
+
+main form input.invalid {
+  outline-color: #ff5263;
+  border-color: #ff5263;
+}
+
+main form .error {
+  color: #ff5263;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+main form .error.active {
+  margin: 7px 0 15px 0;
+}
+
+main form .notify-me {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px 0;
+  background-color: #4f7df3;
+  color: white;
+  border-radius: 50px;
+  border: none;
+  font-weight: 600;
+  -webkit-box-shadow: 0 12px 15px -2px #c2d3ff;
+          box-shadow: 0 12px 15px -2px #c2d3ff;
+  cursor: pointer;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+main form .notify-me:hover {
+  background-color: #7696f8;
+}
+
+main img {
+  width: 100%;
+  max-width: 560px;
+}
+
+@media (min-width: 800px) {
+  main .title {
+    font-size: 36px;
+  }
+  main form {
+    margin: 30px 0 60px 0;
+    font-size: 0;
+  }
+  main form input {
+    margin: 0 2%;
+    width: 66%;
+  }
+  main form .notify-me {
+    margin: 0;
+    width: 30%;
+  }
+  main form .error {
+    position: absolute;
+    top: 100%;
+    left: calc(25px + 2%);
+  }
+}
+
+footer {
+  margin: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+footer .social-media {
+  margin: 15px 0;
+}
+
+footer .social-media .fa-brands {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  margin: 0 5px;
+  padding: 8px;
+  width: 18px;
+  font-size: 18px;
+  color: #4f7df3;
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+  cursor: pointer;
+}
+
+footer .social-media .fa-brands:hover {
+  background: #4f7df3;
+  color: white;
+}
+
+footer .copyright {
+  margin: 15px 0;
+  font-size: 12px;
+  color: #969696;
+}
+/*# sourceMappingURL=style.css.map */
